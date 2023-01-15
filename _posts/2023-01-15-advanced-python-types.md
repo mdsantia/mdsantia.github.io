@@ -65,9 +65,9 @@ def get_fifth_element(things: List[str]) -> str:
 ```
 Again, we don't really need a list here but we aren't iterating. Instead we are checking the length and grabbing the value at a given index. So this means that we must be able to get the size of the input collection and we must be able to get the item in the collection at a given index. If we look at the [docs](https://docs.python.org/3/library/collections.abc.html) we can see that the correct type to use here is `Sequence` since it implements the `__len__` and `__getitem__` methods which allow for us to call `len` on it and to index into it. So we have
 ```python
-from typing import List 
+from typing import Sequence 
 
-def get_fifth_element(things: List[str]) -> str:
+def get_fifth_element(things: Sequence[str]) -> str:
     if len(things) < 5:
         raise ValueError(f"Length of input must be >= 5, found len={len(things)}")
     return things[4]
