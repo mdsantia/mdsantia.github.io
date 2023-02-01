@@ -277,9 +277,9 @@ def add(a: float, b: float) -> float:
 out = add(3.4, 4.5) 
 # function: add ran in 6.902000677655451e-06 seconds
 ```
-Here we have created a `timer` decorator that simply prints the time it took to call the decorated function. When we add the decorator to the simple `add` function it will print out the runtime. This is a simple example but lets look at what is going on. Notice that the outer function oft the decorator takes in the decorated function `func` and we use
+Here we have created a `timer` decorator that simply prints the time it took to call the decorated function. When we add the decorator to the simple `add` function it will print out the runtime. This is a simple example but lets look at what is going on. Notice that the outer function of the decorator takes in the decorated function `func` and we use
 a type annotation of `Callable[P, T]`. `T` is just a generic variable stating that the function could return any type. The `P` variable is the `ParamSpec`. This is what allows
-to keep that type information in the decorated function. In the `inner` function we use `*args` and `**kwargs` as you always would for unknown inputs but now we can annotate them with `P.args` and `P.kwargs`, respectively. And this is the magic that respect the type
+to keep that type information in the decorated function. In the `inner` function we use `*args` and `**kwargs` as you always would for unknown inputs but now we can annotate them with `P.args` and `P.kwargs`, respectively. And this is the magic that respects the type
 information of the decorated function. Your code editor (I use vscode and it is amazing for this and really all things...) should show you the function definition when you hover over it and the type checker should respect the input and output types. I used this feature quite
 heavily in a previous post about [implementing a fully typed lru-cache](../2021-11-25-lru-cache).
 
