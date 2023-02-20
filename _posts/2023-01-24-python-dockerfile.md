@@ -108,14 +108,14 @@ ENV PATH="/opt/venv/bin:$PATH"
 COPY src/requirements.txt .
 RUN pip install -r requirements.txt
 
-FROM python:3.10.9-slim-bullseye as build
+FROM python:3.10.9-slim-bullseye
 
 WORKDIR /app
 
 RUN useradd -mrU $USER && \
     chown -R $USER:$USER /app
 
-COPY --from=builder /opt/venv /opt/venv
+COPY --from=build /opt/venv /opt/venv
 COPY --chown=$USER:$USER src/main.py /app
 
 USER $USER
