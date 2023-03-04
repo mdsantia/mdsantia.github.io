@@ -8,6 +8,10 @@ table {
   font-family: $global-font-family;
   font-size: $type-size-6;
   border-collapse: collapse;
+  max-width: fit-content;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
 
   & + table {
     margin-top: 1em;
@@ -33,5 +37,5 @@ td {
 tr,
 td,
 th {
-  vertical-align: middle;
+  vertical-align: top;
 }
