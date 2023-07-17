@@ -11,10 +11,10 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale: "en-US"
-title: "Justin A. Ellis"
+title: "Micky Santiago-Zayas"
 title_separator: "-"
-name: "Justin Ellis"
-description: "Data Scientist, Infinia ML"
+name: "Micky Santiago-Zayas"
+description: "Mathematician & Computer Scientist, Purdue University Class 2024"
 url: "https://mdsantia.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,7 +104,7 @@ author:
   keybase:
   instagram:
   lastfm:
-  linkedin: "justin-ellis-44a32788"
+  linkedin: "micky-s-7a361a202"
   pinterest:
   soundcloud:
   stackoverflow:

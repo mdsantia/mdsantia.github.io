@@ -4,11 +4,7 @@ title:  "About Me"
 permalink: /about/
 ---
 
-I am a Principal Engineer at [Infinia ML](https://infiniaml.com/). There I work at the intersection of
-DevOps, Web Development, and Machine Learning. On a given day I may be working on a FastAPI/Django backend
-while dealing with mountains of YAML for k8s deployments, writing terraform for infrastructure deployment, helping 
-ML Engineers use cloud resources effectively, and helping architect awesome deployment pipelines for continuous Delivery.
+I am a Mathematics and Computer Science Undergraduate at [Purdue University](https://purdue.edu/) where I am a candidate to graduate this upcoming May. I have concentrations in Software Engineer and Programming Languages. There I studied for the past 3 years, working on several personal projects and formal research. On most of my research, I have focused on pure mathematics, however, I mostly worked on some applied mathematics and computer science projects recently.
 
-I love to code. I love learning new languages/platforms/paradigms. Most of my career I have been a Python programmer
-but I am always on the hunt for new exciting things in the programming/cloud space.
+I love to code. I love learning new mathematics. I envision myself as a Pure Mathematician researching in Analysis branches, and some focus in Applied Mathematics and Industry applying my computer knowledge.
 
