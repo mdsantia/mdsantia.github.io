@@ -15,7 +15,7 @@ title: "Justin A. Ellis"
 title_separator: "-"
 name: "Justin Ellis"
 description: "Data Scientist, Infinia ML"
-url: "https://jellis18.github.io"
+url: "https://mdsantia.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -24,7 +24,7 @@ words_per_minute: 200
 comments:
   provider: "disqus" #, "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
-    shortname: "jellis18-github-io"
+    shortname: "mdsantia-github-io"
   discourse:
     server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -85,11 +85,11 @@ analytics:
 
 # Site Author
 author:
-  name: "Justin Ellis"
-  avatar: /images/headshot.jpg
-  bio: "Principal Engineer, Infinia ML. Former Astrophysicist, former Data Scientist."
-  location: "Durham, NC"
-  email: "justin.ellis18@gmail.com"
+  name: "Micky Santiago-Zayas"
+  avatar: /images/headshot.jpeg
+  bio: "Mathematician, Computer Scientist."
+  location: "West Lafayette, IN"
+  email: "mickydsantiago@gmail.com"
   uri:
   home: # null (default), "absolute or relative url to link to author home"
   bitbucket:
@@ -98,7 +98,7 @@ author:
   flickr:
   facebook: #"justin.ellis.7967"
   foursquare:
-  github: "jellis18"
+  github: "mdsantia1720"
   gitlab:
   google_plus:
   keybase:
@@ -110,7 +110,7 @@ author:
   stackoverflow:
   steam:
   tumblr:
-  twitter: "justinellis18"
+  twitter: #"justinellis18"
   vine:
   weibo:
   xing:
