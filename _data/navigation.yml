@@ -8,9 +8,11 @@ main:
     #  url: /publication/
    - title: "CV"
      url: /files/Resume.pdf
-  #  - title: "Posts"
-    #  url: /year-archive/
+   - title: "Posts"
+     url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+  # - title: "Preprints"
+  #     url: /preprints/
