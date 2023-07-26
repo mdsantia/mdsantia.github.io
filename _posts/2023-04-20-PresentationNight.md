@@ -30,13 +30,11 @@ Free Groups do not promise to be abelian. Meaning, the common case is that it is
 ### Examples of Two Generators
 1. In the commutative case, consider the image below which is just a simple cartesian grid. If we consider `(2, 2)` to be the origin, right up is equivalent to up right, i.e., `(3, 3)`.
 
-![Grid Example](/images/grid.png)
-*Grid Firgure taken from Jarutatsanangkoon, P., Mohammed, W. S., & Pijitrojana, W. (2018). Transformation optics based on unitary vectors and Fermat’s principle for arbitrary spatial transformation design. Applied Optics, 57(29), 8632-8639.*
+![Grid Example{caption=Grid Figure taken from Jarutatsanangkoon, P., Mohammed, W. S., & Pijitrojana, W. (2018). Transformation optics based on unitary vectors and Fermat’s principle for arbitrary spatial transformation design. Applied Optics, 57(29), 8632-8639.}](/images/grid.png)
 
 2. On the other hand, a non-commutative case would be the Cayley Graph underneath which is more analogous to Free Groups. Although we still have two generators `a` and `b`, being right and up respectively, like before but still the `ab` string is not the same location as `ba`.
 
-![Cayley Graph](/images/grid.png)
-*Cayley Graph Figure taken from Wikipedia.*
+![Cayley Graph{caption=Cayley Graph Figure taken from Wikipedia.}](/images/grid.png)
 
 ### Leinert Property
 
@@ -52,8 +50,8 @@ then, flip by inverting the elements, as follows,
 
 ![stringy](https://latex.codecogs.com/svg.image?y=b^{-1}a^{-1}ba^{-1}ba^{-1}.)
 
-I will let you try to convince yourself
-![yisinvertx](that https://latex.codecogs.com/svg.image?y=x^{-1})
+I will let you try to convince yourself that
+![yisinvertx](https://latex.codecogs.com/svg.image?y=x^{-1})
 because `xy=yx=e`. However, we can see that is not true in the commutative case as we can undo any step at any time so there is no unique inverse.
 
 
