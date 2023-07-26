@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "About Me"
+# title:  "About Me"
 # permalink: /about/
 ---
 
