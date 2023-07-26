@@ -18,23 +18,27 @@ Firstly, we refreshed the concepts of groups in Algebra. Most importantly, we mu
 1. an operation that allows elements to interact 
 2. an identity element exists
 3. the existence of inverse elements
-For example, the integers modulo `n` groups has the addition operation, `0` as the identity element and every non-zero element in the set has an element which added to itself returns to zero, e.g., ![mod_example](https://latex.codecogs.com/svg.image?(1&plus;3)\mod&space;4=0.)
+For example, the integers modulo n groups has the addition operation, 0 as the identity element and every non-zero element in the set has an element which added to itself returns to zero, e.g., ![mod_example](https://latex.codecogs.com/svg.image?(1&plus;3)\mod&space;4=0.)
 
 I am intentionally utilizing the modulo group as it is also a special case of groups, an abelian group. Abelian groups are special because the results are independent of the order in which the operation is done, i.e., it possesses the commutative property. However, our study focuses in a group that does not have the commutative property, free groups.
 
 ## Free Groups
 
 ### Group Properties
-Free Groups do not promise to be abelian. Meaning, the common case is that it is non-commutative. We can represent the group to be geometric so that the elements represent possible directions of movement. More specifically, we have an identity element, which we denote as `e`, representing the origin which happens by not moving. In this group, the operation is concatenation, this way, we can interpret the string generated from the operation to represent a history of movements starting from the origin. Every direction has an inverse direction, thus satisfying all the requirements. Most importantly, free groups, although non-abelian, are a special group, this is because they possess generator elements, the same way I intentionally snuck the integers modulo `n` example. These special elements generate all other possible elements in the group. This way we can interpret visually two cases: the commutative and the non-commutative, even though they have the same number of generators, for example, up and right direction elements.
+Free Groups do not promise to be abelian. Meaning, the common case is that it is non-commutative. We can represent the group to be geometric so that the elements represent possible directions of movement. More specifically, we have an identity element, which we denote as `e`, representing the origin which happens by not moving. In this group, the operation is concatenation, this way, we can interpret the string generated from the operation to represent a history of movements starting from the origin. Every direction has an inverse direction, thus satisfying all the requirements. Most importantly, free groups, although non-abelian, are a special group, this is because they possess generator elements, the same way I intentionally snuck the integers modulo n example. These special elements generate all other possible elements in the group. This way we can interpret visually two cases: the commutative and the non-commutative, even though they have the same number of generators, for example, up and right direction elements.
 
 ### Examples of Two Generators
 1. In the commutative case, consider the image below which is just a simple cartesian grid. If we consider `(2, 2)` to be the origin, right up is equivalent to up right, i.e., `(3, 3)`.
 
-![Grid Example{caption=Grid Figure taken from Jarutatsanangkoon, P., Mohammed, W. S., & Pijitrojana, W. (2018). Transformation optics based on unitary vectors and Fermat’s principle for arbitrary spatial transformation design. Applied Optics, 57(29), 8632-8639.}](/images/grid.png)
+| ![Grid Example](/images/grid.png) | 
+|:--:| 
+| *Grid Figure taken from Jarutatsanangkoon, P., Mohammed, W. S., & Pijitrojana, W. (2018). Transformation optics based on unitary vectors and Fermat’s principle for arbitrary spatial transformation design. Applied Optics, 57(29), 8632-8639.* |
 
-2. On the other hand, a non-commutative case would be the Cayley Graph underneath which is more analogous to Free Groups. Although we still have two generators `a` and `b`, being right and up respectively, like before but still the `ab` string is not the same location as `ba`.
+2. On the other hand, a non-commutative case would be the Cayley Graph underneath which is more analogous to Free Groups. Although we still have two generators a and b, being right and up respectively, like before but still the `ab` string is not the same location as `ba`.
 
-![Cayley Graph{caption=Cayley Graph Figure taken from Wikipedia.}](/images/grid.png)
+| ![Cayley Graph](/images/grid.png) | 
+|:--:| 
+| *Cayley Graph Figure taken from Wikipedia.* |
 
 ### Leinert Property
 
@@ -52,14 +56,16 @@ then, flip by inverting the elements, as follows,
 
 I will let you try to convince yourself that
 ![yisinvertx](https://latex.codecogs.com/svg.image?y=x^{-1})
-because `xy=yx=e`. However, we can see that is not true in the commutative case as we can undo any step at any time so there is no unique inverse.
+because
+![equal](https://latex.codecogs.com/svg.image?&space;xy=yx=e.)
+However, we can see that is not true in the commutative case as we can undo any step at any time so there is no unique inverse.
 
 
 ## Definitions
-1. The probability of moving in the direction `n` is denoted as
+1. The probability of moving in the direction n is denoted as
 ![mu](https://latex.codecogs.com/svg.image?\mu(n).)
 
-2. The probability of moving in direction inverse to `n` so that 
+2. The probability of moving in direction inverse to n so that 
 ![muhat](https://latex.codecogs.com/svg.image?\hat\mu(n)=\mu(n^{-1}),)
 is denoted as
 ![muhat](https://latex.codecogs.com/svg.image?\hat\mu(n).)
