@@ -1,7 +1,7 @@
 ---
 title: "Web Dominoes"
-link: https://github.com/mdsantia/ScheduleSwift307#readme
-excerpt: "Web scheduling project, where different businesses can easily promote and have simple management over their reservations."
+link: https://github.com/kraisr/Web-Dominoes#readme
+excerpt: "Dominoes available online that makes API calls to a personal server to practice and show balanced web skills."
 header:
-  teaser: /images/ScheduleSwift.png
+  teaser: /images/Web-Dominoes.png
 ---
