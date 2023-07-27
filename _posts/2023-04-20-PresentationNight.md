@@ -30,15 +30,17 @@ Free Groups do not promise to be abelian. Meaning, the common case is that it is
 ### Examples of Two Generators
 1. In the commutative case, consider the image below which is just a simple cartesian grid. If we consider `(2, 2)` to be the origin, right up is equivalent to up right, i.e., `(3, 3)`.
 
-| ![Grid Example](/images/grid.png) | 
-|:--:| 
-| *Grid Figure taken from Jarutatsanangkoon, P., Mohammed, W. S., & Pijitrojana, W. (2018). Transformation optics based on unitary vectors and Fermat’s principle for arbitrary spatial transformation design. Applied Optics, 57(29), 8632-8639.* |
+<div align="center">
+    <img src="/images/grid.png" alt="Grid Example">
+    <figcaption>Grid Figure taken from Jarutatsanangkoon, P., Mohammed, W. S., & Pijitrojana, W. (2018). Transformation optics based on unitary vectors and Fermat’s principle for arbitrary spatial transformation design. Applied Optics, 57(29), 8632-8639.</figcaption>
+</div>
 
 2. On the other hand, a non-commutative case would be the Cayley Graph underneath which is more analogous to Free Groups. Although we still have two generators a and b, being right and up respectively, like before but still the `ab` string is not the same location as `ba`.
 
-| ![Cayley Graph](/images/grid.png) | 
-|:--:| 
-| *Cayley Graph Figure taken from Wikipedia.* |
+<div align="center">
+    <img src="/images/Cayley tree.png" alt="Cayley Graph">
+    <figcaption>Cayley Graph Figure taken from Wikipedia.</figcaption>
+</div>
 
 ### Leinert Property
 
@@ -61,7 +63,7 @@ because
 However, we can see that is not true in the commutative case as we can undo any step at any time so there is no unique inverse.
 
 
-## Definitions
+## Definitions & Notation
 1. The probability of moving in the direction n is denoted as
 ![mu](https://latex.codecogs.com/svg.image?\mu(n).)
 
