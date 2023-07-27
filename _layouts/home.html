@@ -2,12 +2,9 @@
 layout: archive
 ---
 
-<!-- Add the marked.min.js library -->
-<script src="/js/marked.min.js"></script>
-
 {% if site.pages | where:"title","About" | size > 0 %}
   {% assign about_page = site.pages | where:"title","About" | first %}
-  <div id="about-content"></div>
+  {{ about_page.content }}
 {% endif %}
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
