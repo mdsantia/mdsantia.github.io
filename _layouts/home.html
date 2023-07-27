@@ -1,11 +1,10 @@
 ---
-layout: home
-author_profile: true
+layout: archive
 ---
 
 {% if site.pages | where:"title","About" | size > 0 %}
   {% assign about_page = site.pages | where:"title","About" | first %}
-  {{ about_page.content }}
+  {% include custom_about_page.html content=about_page.content %}
 {% endif %}
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
