@@ -2,8 +2,8 @@
 layout: archive
 ---
 
-{% if site.pages | where:"title","About" | size > 0 %}
-  {% assign about_page = site.pages | where:"title","About" | first %}
+{% if site.pages | where:"title","About Me" | size > 0 %}
+  {% assign about_page = site.pages | where:"title","About Me" | first %}
   {% include custom_about_page.html content=about_page.content %}
 {% endif %}
 
