@@ -6,8 +6,9 @@ layout: archive
   <img src="/images/Pool Home Page.jpg" alt="Pool Home Page Image" style="width: 100%; filter: grayscale(100%);">
 </div>
 
-{% if site.pages | where:"title","About Me" | size > 0 %}
-  {% assign about_page = site.pages | where:"title","About Me" | first %}
+{% if site.pages | where:"permalink","/about/" | size > 0 %}
+  {% assign about_page = site.pages | where:"permalink","/about/" | first %}
+  <h1 class="page__title">{{ about_page.title }}</h1>
   {{ about_page.content }}
 {% endif %}
 
