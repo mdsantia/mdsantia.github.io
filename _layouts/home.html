@@ -2,6 +2,15 @@
 layout: archive
 ---
 
+{% capture about_content %}
+  {% if site.pages | where:"title","About Me" | size > 0 %}
+    {% assign about_page = site.pages | where:"title","About Me" | first %}
+    {% include about.html content=about_page.content %}
+  {% endif %}
+{% endcapture %}
+
+{{ about_content | markdownify }}
+
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 {% for post in paginator.posts %}
