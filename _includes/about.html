@@ -1,9 +1,38 @@
-<article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-  <header>
-    <h1 class="page__title" itemprop="headline">{{ page.title }}</h1>
-  </header>
+---
+layout: default
+---
 
-  <section class="page__content" itemprop="text">
-    {{ content }}
-  </section>
-</article>
+<div id="main" role="main">
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if page.title %}
+      <header>
+        <h1 class="page__title" itemprop="headline">{{ page.title }}</h1>
+      </header>
+    {% endif %}
+
+    <section class="page__content" itemprop="text">
+      {{ content }}
+      {% if page.link %}
+        <div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>
+      {% endif %}
+    </section>
+
+    {% if page.last_modified_at or page.date %}
+      <footer class="page__meta">
+        {% if site.data.ui-text[site.locale].meta_label %}
+          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+        {% endif %}
+        {% include page__taxonomy.html %}
+        {% if page.last_modified_at %}
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%B %d, %Y" }}</time></p>
+        {% elsif page.date %}
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+        {% endif %}
+      </footer>
+    {% endif %}
+
+    {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
+      {% include comments.html %}
+    {% endif %}
+  </article>
+</div>
