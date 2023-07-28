@@ -1,6 +1,5 @@
 ---
-layout: about
-# layout: single return back to original
+layout: single
 title:  "About Me"
 permalink: /about/
 ---

@@ -95,7 +95,6 @@ Is there a middle ground between the commutative and non-commutative case? Or le
     <img src="/images/Almost_leinert_analogy.png" alt="Almost Leinert Analogy">
     <figcaption>This figure shows how an Almost Leinert Property might behave like with a dressing analogy.</figcaption>
 </div>
-![](/images/)
 
 When dressing up, we are not able to change the order in which we dress the shirt and tie, or the socks and shoes. However, we still have the freedom to dress as, (sock, shirt, shoes, tie) or (sock, shoes, shirt, tie). It is sufficient to dress the shirt before the tie and the socks before the shoes, anything else is possible. So what might the spectral norm of groups which do not strictly follow the Leinert Property be? What is an example of such a case? Well, a good simple example is the product of free groups. 
 
@@ -104,7 +103,6 @@ Imagine two free groups, both of containing two elements and an identity as foll
 <div align="center">
     <img src="https://latex.codecogs.com/svg.image?\qquad&space;a,b\in&space;A,\,x,y\in&space;Z\quad\text{where}\quad&space;A,Z\subset\mathbb{F}^2\quad\text{and}\\e\in&space;A\times&space;Z\quad\text{s.t.}\quad&space;a^{-1}xab^{-1}yby^{-1}x^{-1}=a^{-1}ab^{-1}bxyy^{-1}x^{-1}=e." alt="def_free_groups">
 </div>
-
 
 As you can see, `a,b` and `x, y` are non-commutable amongst each other, however, `a` with `x`and `y`, `b` with `x`and `y`, and their converses, are. So fundamentally, our main goal is to find what the spectral norm is on these Almost-Leinert scenarios, however, for the purpose of our study, we focused on the product of free groups of the form 
 ![f^nxf^n](https://latex.codecogs.com/svg.image?\mathbb{F}^n\times\mathbb{F}^n)
