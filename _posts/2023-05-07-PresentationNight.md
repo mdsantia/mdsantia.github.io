@@ -76,13 +76,18 @@ is denoted as
 ![sigma](https://latex.codecogs.com/svg.image?\sigma=\mu*\hat\mu.)
 
 4. The probability of returning to the origin after infinitely many steps, named the spectral norm, is given by the following equation,
-![spectralnorm](https://latex.codecogs.com/svg.image?\left||\sigma\right||=lim_{n\to\infty}\sqrt[n]{\sigma^{(n)}(e)}.)
+
+<div align="center">
+    <img src="https://latex.codecogs.com/svg.image?\left||\sigma\right||=lim_{n\to\infty}\sqrt[n]{\sigma^{(n)}(e)}." alt="spectralnorm">
+</div>
 
 # Our study
 ## Goal
-We should mention first that [Woess (1986)][#woess] managed to prove that the spectral norm for the random walks in groups with the Leinert Property to be the inverse of the radius of convergence for the following function:
+We should mention first that [Woess (1986)](#references) managed to prove that the spectral norm for the random walks in groups with the Leinert Property to be the inverse of the radius of convergence for the following function:
 
-![G(z)](https://latex.codecogs.com/svg.image?&space;G(z)=\sum_{n=0}^\infty{\mu^{(n)}(e)z^{2n}}.)
+<div align="center">
+    <img src="https://latex.codecogs.com/svg.image?&space;G(z)=\sum_{n=0}^\infty{\mu^{(n)}(e)z^{2n}}." alt="G(z)">
+</div>
 
 Is there a middle ground between the commutative and non-commutative case? Or let me better rephrase the question as, is there Almost-Leinert cases and how would these behave? Well, analogically, we can visuallize the problem with the following daily circumstance:
 
@@ -91,8 +96,17 @@ Is there a middle ground between the commutative and non-commutative case? Or le
     <figcaption>This figure shows how an Almost Leinert Property might behave like with a dressing analogy.</figcaption>
 </div>
 
-When dressing up, we are not able to change the order in which we dress the shirt and tie, or the socks and shoes. However, we still have the freedom to dress as, (sock, shirt, shoes, tie) or (sock, shoes, shirt, tie). It is sufficient to dress the shirt before the tie and the socks before the shoes, anything else is possible. So what might the spectral norm of groups which do not strictly follow the Leinert Property be? What is an example of such a case? 
+When dressing up, we are not able to change the order in which we dress the shirt and tie, or the socks and shoes. However, we still have the freedom to dress as, (sock, shirt, shoes, tie) or (sock, shoes, shirt, tie). It is sufficient to dress the shirt before the tie and the socks before the shoes, anything else is possible. So what might the spectral norm of groups which do not strictly follow the Leinert Property be? What is an example of such a case? Well, a good simple example is the product of free groups. 
 
+Imagine two free groups, both of containing two elements and an identity as follows:
+
+<div align="center">
+    <img src="https://latex.codecogs.com/svg.image?\qquad&space;a,b\in&space;A,\,x,y\in&space;Z\quad\text{where}\quad&space;A,Z\subset\mathbb{F}^2\quad\text{and}\\e\in&space;A\times&space;Z\quad\text{s.t.}\quad&space;a^{-1}xab^{-1}yby^{-1}x{-1}=a^{-1}ab^{-1}bxyy^{-1}x^{-1}=e." alt="def_free_groups">
+</div>
+
+As you can see, `a,b` and `x, y` are non-commutable amongst each other, however, `a` with `x`and `y`, `b` with `x`and `y`, and their converses, are. So fundamentally, our main goal is to find what the spectral norm is on these Almost-Leinert scenarios, however, for the purpose of our study, we focused on the product of free groups of the form 
+![f^nxf^n](https://latex.codecogs.com/svg.image?\mathbb{F}^n\times\mathbb{F}^n)
+and its behavior as `n` increases.
 
 ## Methods
 
@@ -102,11 +116,11 @@ When dressing up, we are not able to change the order in which we dress the shir
 ## Summary
 ## Takeaways
 ## References
-1. [Akemann, C. A., & Ostrand, P. A. (1976). Computing norms in Group C ∗ -algebras. American Journal of Mathematics, 98(4), 1015. https://doi.org/10.2307/2374039](#akemann)
+1. [Akemann, C. A., & Ostrand, P. A. (1976). Computing norms in Group C ∗ -algebras. American Journal of Mathematics, 98(4), 1015.](https://doi.org/10.2307/2374039)
 
-2. [Hastings, M. B. (2007). Random unitaries give quantum expanders. Physical Review A, 76(3). https://doi.org/10.1103/physreva.76.032315](#hastings)
+2. [Hastings, M. B. (2007). Random unitaries give quantum expanders. Physical Review A, 76(3).](https://doi.org/10.1103/physreva.76.032315)
 
-3. [Woess, W. (1986). A short computation of the norms of free convolution operators. Proceedings of the American Mathematical Society, 96(1), 167–170. https://doi.org/10.1090/s0002-9939-1986-0813831-3](#woess)
+3. [Woess, W. (1986). A short computation of the norms of free convolution operators. Proceedings of the American Mathematical Society, 96(1), 167–170.](https://doi.org/10.1090/s0002-9939-1986-0813831-3)
 
 
 # Additional information
