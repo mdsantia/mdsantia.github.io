@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<h1>Welcome to My Home Page</h1>
+
+<!-- Add any custom content you want to display here -->
+<!-- You can use regular HTML or Markdown syntax -->
+
+<!-- For example, to include content from _pages/about.md -->
+{% if site.pages | where:"title","About" | size > 0 %}
+  {% assign about_page = site.pages | where:"title","About" | first %}
+  {{ about_page.content }}
+{% endif %}
+
+<!-- Display recent posts, similar to the archive layout -->
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}
