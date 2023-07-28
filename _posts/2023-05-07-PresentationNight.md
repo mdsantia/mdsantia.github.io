@@ -3,11 +3,11 @@ layout: single
 title:  "Random Walks in Products of Free Groups"
 header:
   image: "images/UGRPS-Summer-22.jpg"
-date: 2023-04-20
+date: 2023-05-07
 mathjax: true
 ---
 
-During the Spring 2023 semester, I had the opportunity to share with the Department of Mathematics at Purdue University some of the ideas I worked on during the previous Summer 2022 with [Dr. Thomas Sinclair](https://www.math.purdue.edu/~tsincla/) and other peers in the field, [Colton Griffin](https://www.linkedin.com/in/colton-griffin-9b1b3b191/), [Sanchita Chakraborty](https://www.linkedin.com/in/sanchita-chakraborty-8107a9192/), and Yuxiao Wang. I will try to summarize the presentation, as well as our preleminary results from when we worked on the project.
+On April 20th 2023, I had the opportunity to share with the Department of Mathematics at Purdue University some of the ideas I worked on during the previous Summer 2022 with [Dr. Thomas Sinclair](https://www.math.purdue.edu/~tsincla/) and other peers in the field, [Colton Griffin](https://www.linkedin.com/in/colton-griffin-9b1b3b191/), [Sanchita Chakraborty](https://www.linkedin.com/in/sanchita-chakraborty-8107a9192/), and Yuxiao Wang. I will try to summarize the presentation, as well as our preleminary results from when we worked on the project.
 
 # Purpose
 The main goal was to explain the underlying concepts of the study in a brief 10 minute presentation to a wide audience without feeling limited or confused by the complexity of notation and the mathematics used.
@@ -80,6 +80,19 @@ is denoted as
 
 # Our study
 ## Goal
+We should mention first that [Woess (1986)][#woess] managed to prove that the spectral norm for the random walks in groups with the Leinert Property to be the inverse of the radius of convergence for the following function:
+
+![G(z)](https://latex.codecogs.com/svg.image?&space;G(z)=\sum_{n=0}^\infty{\mu^{(n)}(e)z^{2n}}.)
+
+Is there a middle ground between the commutative and non-commutative case? Or let me better rephrase the question as, is there Almost-Leinert cases and how would these behave? Well, analogically, we can visuallize the problem with the following daily circumstance:
+
+<div align="center">
+    <img src="/images/Almost_leinert_analogy.png" alt="Almost Leinert Analogy">
+    <figcaption>This figure shows how an Almost Leinert Property might behave like with a dressing analogy.</figcaption>
+</div>
+
+When dressing up, we are not able to change the order in which we dress the shirt and tie, or the socks and shoes. However, we still have the freedom to dress as, (sock, shirt, shoes, tie) or (sock, shoes, shirt, tie). It is sufficient to dress the shirt before the tie and the socks before the shoes, anything else is possible. So what might the spectral norm of groups which do not strictly follow the Leinert Property be? What is an example of such a case? 
+
 
 ## Methods
 
@@ -89,6 +102,11 @@ is denoted as
 ## Summary
 ## Takeaways
 ## References
+1. [Akemann, C. A., & Ostrand, P. A. (1976). Computing norms in Group C ∗ -algebras. American Journal of Mathematics, 98(4), 1015. https://doi.org/10.2307/2374039](#akemann)
+
+2. [Hastings, M. B. (2007). Random unitaries give quantum expanders. Physical Review A, 76(3). https://doi.org/10.1103/physreva.76.032315](#hastings)
+
+3. [Woess, W. (1986). A short computation of the norms of free convolution operators. Proceedings of the American Mathematical Society, 96(1), 167–170. https://doi.org/10.1090/s0002-9939-1986-0813831-3](#woess)
 
 
 # Additional information
