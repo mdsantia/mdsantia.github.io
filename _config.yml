@@ -86,6 +86,7 @@ analytics:
 # Site Author
 author:
   name: "Micky Santiago-Zayas"
+  link: "/"
   avatar: /images/headshot.jpeg
   bio: "Mathematics BA Candidate. Computer Science BA Candidate."
   location: "West Lafayette, IN"
