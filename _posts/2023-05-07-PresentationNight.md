@@ -109,13 +109,36 @@ As you can see, `a,b` and `x, y` are non-commutable amongst each other, however,
 and its behavior as `n` increases.
 
 ## Methods
+We had two main strategies and approaches, permutate the results made by Woess’ through rough approximation and analysis to find the rate of the probability to return to the identity element in the product of free groups scenario. In other words, finding an equation to evaluate the spectral norm of this new group and show an upper bound to the number of walks that do not return to the identity element a group has. Then, through counting, evaluate how close the perturbed equation to experimental cases of the product of free groups. We can simulate random walks in a computer through random matrices as mentioned in [Hastings (2007)](#references), and to access our original code, [here](https://github.com/chemfinal-dot/2022-Sinclair-Code/blob/main/README.md) we have the main agorithms to our methods.
+
+Our main hypothesis was that as the number of dimensions increased, the expected number of simplifiable strings (the resultant random unitary matrices), although correlated, can still be computed by finding an error term.
 
 ## Results
+As some substantial results, we showed an upper bound to the number of bad walks. Also showed a perturbed equation of Woess with an error term for sets that have this Almost Leinert behavior. And numerically found that through our experimentation of random calculations, it was around 3% of relative error to the equation.
+
+When studying the radius of convergence of product of free groups, a specific instance of almost Leinert set. We found a function Q(z, G(z)) that incorporates the number of bad strings in the set such that,
+<!-- P(zG(z)) ≤ G(z) ≤ Q(z, G(z)). Also, P(t) and Q(t,z) Found an equation Q(t,z) whose r-1 bounds the spectral norm-->
+
+![P(t)](https://latex.codecogs.com/svg.image?&space;P(t)=1&plus;\frac{1}{2}\sum_{x\in&space;X}{\left(\sqrt{1&plus;4|\alpha(x)|^2t^2}-1\right)})
+
+![Q(z, t)](https://latex.codecogs.com/svg.image?Q(t,z)=1&plus;\frac{1}{2}\sum_{i,j}{\left(\sqrt{\left(1&plus;\frac{zt^2}{c^2-t^2}\right)^2&plus;4\alpha_{i,j}^2z^2t^2}&plus;\frac{zt^2}{c^2-t^2}-1\right)})
+
+In our numerical calculations with increasing dimensions in the group formed by the product of two free groups with two generators, the lower bound on radius of convergence for G(z) differed from the upper bound by ~3% relative error.
+
+<div align="center">
+    <img src="/images/Relative Error.png" alt="Relative Error Plot">
+    <figcaption>This plot shows the relative error between our recursive function Q.</figcaption>
+</div>
 
 # Conclusion
-## Summary
-## Takeaways
-## References
+
+Although our results are still inconclusive, results seem to be following our intuition created by past studies. This new function has been successful in tightly bounding the radius of convergence of almost Leinert Sets with the radius of convergence found by Woess for Leinert Sets.
+Further calculations and analysis must be conducted to further our current understanding over the topic.
+
+## Takeaways and Future Directions
+Future works should consider analytically exploring a tighter bound on the "irreducible" strings as the size of the string exponentially decrease in proportion to valid strings. For the purposes of this project, only bad strings up to length sixteen were found, and the minimum length of the string found was length 8. As the length increases and bad strings are added in, the number of bad strings are seen to exponentially increase in proportion to valid strings.
+
+# References
 1. [Akemann, C. A., & Ostrand, P. A. (1976). Computing norms in Group C ∗ -algebras. American Journal of Mathematics, 98(4), 1015.](https://doi.org/10.2307/2374039)
 
 2. [Hastings, M. B. (2007). Random unitaries give quantum expanders. Physical Review A, 76(3).](https://doi.org/10.1103/physreva.76.032315)
