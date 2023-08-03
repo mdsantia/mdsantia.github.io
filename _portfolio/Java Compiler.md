@@ -5,5 +5,3 @@ excerpt: "As a course project, I build a Java Compiler that converts Java files 
 header:
   teaser: /images/compilerimage.jpg
 ---
-
-Under Construction.
