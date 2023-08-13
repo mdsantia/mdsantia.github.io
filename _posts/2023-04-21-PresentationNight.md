@@ -7,17 +7,18 @@ date: 2023-04-21
 mathjax: true
 ---
 
-Last night, on April 20th 2023, I had the opportunity to share with the Department of Mathematics at Purdue University some of the ideas I worked on during the previous Summer 2022 with [Dr. Thomas Sinclair](https://www.math.purdue.edu/~tsincla/) and other peers in the field, [Colton Griffin](https://www.linkedin.com/in/colton-griffin-9b1b3b191/), [Sanchita Chakraborty](https://www.linkedin.com/in/sanchita-chakraborty-8107a9192/), and Yuxiao Wang. I will try to summarize the presentation, as well as our preleminary results from when we worked on the project.
+Last night, on April 20th 2023, I had the opportunity to share with the Department of Mathematics at Purdue University some of the ideas I worked on during the previous Summer 2022 with [Dr. Thomas Sinclair](https://www.math.purdue.edu/~tsincla/) and other peers in the field, [Colton Griffin](https://www.linkedin.com/in/colton-griffin-9b1b3b191/), [Sanchita Chakraborty](https://www.linkedin.com/in/sanchita-chakraborty-8107a9192/), and Yuxiao Wang. I will try to summarize the presentation, as well as our preliminary results from when we worked on the project.
 
 # Purpose
 The main goal was to explain the underlying concepts of the study in a brief 10 minute presentation to a wide audience without feeling limited or confused by the complexity of notation and the mathematics used.
 
 # Introduction
-## Algebraic Groups
-Firstly, we refreshed the concepts of groups in Algebra. Most importantly, we must remember that the main properties of groups are:
-1. an operation that allows elements to interact 
+## Groups
+Firstly, we refreshed the concepts of groups in abstract algebra. Most importantly, we must remember that the main properties of groups are:
+1. an operation that allows pairs of elements to interact 
 2. an identity element exists
 3. the existence of inverse elements
+
 For example, the integers modulo n groups has the addition operation, 0 as the identity element and every non-zero element in the set has an element which added to itself returns to zero, e.g., ![mod_example](https://latex.codecogs.com/svg.image?(1&plus;3)\mod&space;4=0.)
 
 I am intentionally utilizing the modulo group as it is also a special case of groups, an abelian group. Abelian groups are special because the results are independent of the order in which the operation is done, i.e., it possesses the commutative property. However, our study focuses in a group that does not have the commutative property, free groups.
@@ -25,7 +26,7 @@ I am intentionally utilizing the modulo group as it is also a special case of gr
 ## Free Groups
 
 ### Group Properties
-Free Groups do not promise to be abelian. Meaning, the common case is that it is non-commutative. We can represent the group to be geometric so that the elements represent possible directions of movement. More specifically, we have an identity element, which we denote as `e`, representing the origin which happens by not moving. In this group, the operation is concatenation, this way, we can interpret the string generated from the operation to represent a history of movements starting from the origin. Every direction has an inverse direction, thus satisfying all the requirements. Most importantly, free groups, although non-abelian, are a special group, this is because they possess generator elements, the same way I intentionally snuck the integers modulo n example. These special elements generate all other possible elements in the group. This way we can interpret visually two cases: the commutative and the non-commutative, even though they have the same number of generators, for example, up and right direction elements.
+The elements in Free Groups are strings or sequence of directions taken (paths) from an origin, and these do not promise to be abelian, i.e., it is generally non-commutative. We can represent the group to be geometric so that the elements represent possible directions of movement. More specifically, we have an identity element, which we denote as `e`, representing the origin which happens by not moving. In this group, the operation is concatenation, this way, we can interpret the string generated from the operation to represent a history of movements starting from the origin. Every direction has an inverse direction, thus satisfying all the requirements. Most importantly, free groups, although non-abelian, are a special group, this is because they possess finitely many generator elements, the same way I intentionally snuck the integers modulo n example. These special elements generate all other possible elements in the group. This way we can interpret visually two cases: the commutative and the non-commutative, even though they have the same number of generators, for example, up and right direction elements.
 
 ### Examples of Two Generators
 1. In the commutative case, consider the image below which is just a simple cartesian grid. If we consider `(2, 2)` to be the origin, right up is equivalent to up right, i.e., `(3, 3)`.
@@ -35,7 +36,7 @@ Free Groups do not promise to be abelian. Meaning, the common case is that it is
     <figcaption>Grid Figure taken from Jarutatsanangkoon, P., Mohammed, W. S., & Pijitrojana, W. (2018). Transformation optics based on unitary vectors and Fermat’s principle for arbitrary spatial transformation design. Applied Optics, 57(29), 8632-8639.</figcaption>
 </div>
 
-2. On the other hand, a non-commutative case would be the Cayley Graph underneath which is more analogous to Free Groups. Although we still have two generators a and b, being right and up respectively, like before but still the `ab` string is not the same location as `ba`.
+2. On the other hand, a non-commutative case would be the Cayley graph underneath which is more analogous to free groups. Although we still have two generators a and b, being right and up respectively, like before but still the `ab` string is not the same location as `ba`.
 
 <div align="center">
     <img src="/images/Cayley tree.png" alt="Cayley Graph">
@@ -75,7 +76,7 @@ is denoted as
 3. The probability of staying in place is denoted as
 ![sigma](https://latex.codecogs.com/svg.image?\sigma=\mu*\hat\mu.)
 
-4. The probability of returning to the origin after infinitely many steps, named the spectral norm, is given by the following equation,
+4. The probability of returning to the origin after infinitely many steps, named the *spectral norm*, is given by the following equation,
 
 <div align="center">
     <img src="https://latex.codecogs.com/svg.image?\left||\sigma\right||=lim_{n\to\infty}\sqrt[n]{\sigma^{(n)}(e)}." alt="spectralnorm">
@@ -124,12 +125,20 @@ where `G(z)` is the same representation from Woess. The functions are:
 
 <div align="center">
     <img src=https://latex.codecogs.com/svg.image?Q(t,z)=1&plus;\frac{1}{2}\sum_{i,j}{\left(\sqrt{\left(1&plus;\frac{zt^2}{c^2-t^2}\right)^2&plus;4\alpha_{i,j}^2z^2t^2}&plus;\frac{zt^2}{c^2-t^2}-1\right)} alt="Q(z, t)">
+    <figcaption>In the equation above, the variable c expresses the growth of bad strings.</figcaption>
 </div>
+
+These equations when plotted behave as follows,
+<div align="center">
+    <img src="/images/visual%20P_G.png" alt="Q-P Relationship">
+    <figcaption>In the plot above we can visuallize how the equations P and Q bound the value for G.</figcaption>
+</div>
+
 
 Our experimentation through our numerical calculations with increasing dimensions of matrices in the group formed by the product of two free groups with two generators, the lower bound on radius of convergence for `G(z)` differed from the upper bound by about 3% relative error as shown in the plot below.
 
 <div align="center">
-    <img src="/images/Relative Error.png" alt="Relative Error Plot">
+    <img src="/images/Relative%20error.png" alt="Relative Error Plot">
     <figcaption>This plot shows the relative error between our recursive function Q.</figcaption>
 </div>
 
@@ -140,7 +149,9 @@ Although our results are still inconclusive, results seem to be following our in
 Further calculations and analysis must be conducted to further our current understanding over the topic.
 
 ## Takeaways and Future Directions
-Future works should consider analytically exploring a tighter bound on the "irreducible" strings (strings that do not simplify to the identity) as the size of the string exponentially decrease in proportion to valid strings. For the purposes of this project, only bad strings up to length sixteen, and the minimum length of the string found was length 8. As the length increases and bad strings are added in, the number of bad strings are seen to exponentially increase in proportion to valid strings.
+Future works should consider analytically exploring a tighter bound on the "irreducible" strings (strings that do not simplify to the identity) as the size of the string exponentially decrease in proportion to valid strings. For the purposes of this project, only bad strings up to length sixteen, and the minimum length of the string found was length 8. As the length increases and bad strings are added in, the number of bad strings are seen to exponentially increase in proportion to valid strings. However, we have no numerical approximation to determine the growth of these bad strings. There is also no complete reasoning for why this altered recurence bounds the equation tightly. 
+
+There was also an interesting observation during our study, that is, the x coordinate of the tangent at the bulge point for the plot generated from *Q*, as shown in the plot above, is always less than the reciprocal of *c*. There is missing reasoning for why this is true, however, our team suspects it has to do with the fact that the x coordinate of the tangent for *P* occurs at the reciprocal of the radius of convergence of *G* as discussed by Woess. 
 
 # References
 1. [Akemann, C. A., & Ostrand, P. A. (1976). Computing norms in Group C*-algebras. American Journal of Mathematics, 98(4), 1015.](https://doi.org/10.2307/2374039)
@@ -157,4 +168,4 @@ Future works should consider analytically exploring a tighter bound on the "irre
 
 # Acknowledgements
 
-I would like to thank Dr. Thomas Sinclair for his support of the team and allowing me to be a part of such an exciting experience and being an incredible mentor/teacher for both the Presentation Night and the study's development. My team members, Colton, Sanchita and Yuxiao for being an incredible team with insightful ideas and discussions. In addition to [Dr. Jonathan Peterson](https://www.math.purdue.edu/~peterson/) for hosting and organizing such an incredible and insightful event. Also, [Dr. Ignacio Camarillo](https://www.bio.purdue.edu/People/profile/ignacio.html), director of LSAMP, for teaching, organizing, and funding my personal involvement in the project. As well as, the National Science Foundation for funding Dr. Sinclair's work as it was partially funded by the grant DMS-2055155. Lastly, I would like to thank the audience for the attention throughout the presentation and the engagement received in the QA section. I really appreciated all the opportunities I was granted and will forever be in debt to all of you as I thank you all for making my first research experience in Academia one I could never forget.
+I would like to thank Dr. Thomas Sinclair for his support of the team and allowing me to be a part of such an exciting experience and being an incredible mentor/teacher for both the Presentation Night and the study's development. My team members, Colton, Sanchita and Yuxiao for being an incredible team with insightful ideas and discussions. In addition to [Dr. Jonathan Peterson](https://www.math.purdue.edu/~peterson/) for hosting and organizing such an incredible and insightful event. Also, [Dr. Ignacio Camarillo](https://www.bio.purdue.edu/People/profile/ignacio.html), director of LSAMP, for teaching, organizing, and funding my personal involvement in the project. I would also thank the National Science Foundation for funding Dr. Sinclair's work, having our work partially funded by the grant DMS-2055155. Lastly, I would like to thank the audience for the attention throughout the presentation and the engagement received in the QA section. I really appreciated all the opportunities I was granted and will forever be in debt to all of you as I thank you all for making my first research experience in academia one I could never forget.
