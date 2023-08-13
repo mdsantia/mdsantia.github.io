@@ -130,7 +130,7 @@ where `G(z)` is the same representation from Woess. The functions are:
 
 These equations when plotted behave as follows,
 <div align="center">
-    <img src="/images/visual%20P_G.png" alt="Q-P Relationship">
+    <img src="/images/Plot Q_P.png" alt="Q-P Relationship">
     <figcaption>In the plot above we can visuallize how the equations P and Q bound the value for G.</figcaption>
 </div>
 
