@@ -87,9 +87,9 @@ analytics:
 author:
   name: "Micky Santiago-Zayas"
   avatar: /images/headshot.jpeg
-  bio: "Mathematics BA Candidate. Computer Science BA Candidate."
-  location: "West Lafayette, IN"
-  email: "mickydsantiago@gmail.com"
+  bio: "Mathematics BS. Computer Science BS."
+  location: "Ames, IA"
+  email: "mdsantia@iastate.edu"
   uri:
   home: "/" # null (default), "absolute or relative url to link to author home"
   bitbucket:
