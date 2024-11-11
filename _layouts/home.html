@@ -2,17 +2,21 @@
 layout: archive
 ---
 
-<div style="width: 100%; max-width: 800px; height: 250px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border-radius: 5px; overflow: hidden; border: 1px solid #ccc;">
-  <img src="/images/Pool Image.JPG" alt="Pool Home Page Image" style="max-height: 100%; width: auto; filter: grayscale(100%);">
-  <p style="margin-top: 10px; font-style: italic; margin: 5px; border-radius: 5px;">Courtesy of Jenny Ha</p>
+<div style="width: 100%; max-width: 800px; height: 250px; margin: 0 auto; display: flex; align-items: center; justify-content: flex-start; text-align: left; border-radius: 5px;">
+  <!-- Image Section -->
+  <div style="border: 2px solid #ccc; border-radius: 5px; overflow: hidden; margin-right: 20px;">
+    <img src="/images/Pool Image.JPG" alt="Pool Home Page Image" style="max-height: 250px; width: auto; filter: grayscale(100%);">
+  </div>
+  
+  <!-- About Me Content Section -->
+  {% if site.pages | where:"permalink","/about/" | size > 0 %}
+    {% assign about_page = site.pages | where:"permalink","/about/" | first %}
+    <div style="flex-grow: 1;">
+      <h1 class="page__title">{{ about_page.title }}</h1>
+      <div>{{ about_page.content }}</div>
+    </div>
+  {% endif %}
 </div>
-
-
-{% if site.pages | where:"permalink","/about/" | size > 0 %}
-  {% assign about_page = site.pages | where:"permalink","/about/" | first %}
-  <h1 class="page__title">{{ about_page.title }}</h1>
-  {{ about_page.content }}
-{% endif %}
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
