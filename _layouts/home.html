@@ -6,7 +6,7 @@ layout: archive
   <!-- About Me Content Section -->
   {% if site.pages | where:"permalink","/about/" | size > 0 %}
   {% assign about_page = site.pages | where:"permalink","/about/" | first %}
-  <div style="flex-grow: 1;">
+  <div style="flex-grow: 1;display: flex; align-items: center; justify-content: flex-start; text-align: left;">
     <h1 class="page__title">{{ about_page.title }}</h1>
       <!-- Image Section -->
       <div style="min-width: 25px; max-width: 50px; overflow: hidden; margin-right: 20px; position: relative;">
