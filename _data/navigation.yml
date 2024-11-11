@@ -6,8 +6,8 @@ main:
      url: /portfolio/
   #  - title: "Publications"
     #  url: /publication/
-  #  - title: "CV"
-  #    url: /files/Resume.pdf
+   - title: "CV"
+     url: /files/Resume.pdf
    - title: "Posts"
      url: /year-archive/
   # - title: "Sample Collections"
