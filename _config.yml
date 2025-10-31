@@ -236,9 +236,12 @@ compress_html:
 # Collections
 collections:
   projects:
+<<<<<<< HEAD
     output: true
     permalink: /:collection/:path/
   preprints:
+=======
+>>>>>>> d498d295ab1c6c8369940c94bd88742265797ad0
     output: true
     permalink: /:collection/:path/
 
@@ -274,7 +277,11 @@ defaults:
   # _preprints
   - scope:
       path: ""
+<<<<<<< HEAD
       type: preprints
+=======
+      type: projects
+>>>>>>> d498d295ab1c6c8369940c94bd88742265797ad0
     values:
       layout: single
       author_profile: false
