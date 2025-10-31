@@ -4,9 +4,9 @@ title:  "About Me"
 permalink: /about/
 ---
 
-I am a Mathematics and Computer Science alumni from [Purdue University](https://purdue.edu/). My concentrations were in Software Engineer and Programming Languages for my Computer Science degree, while I focused on Analytical concepts in Mathematics. 
+I am a Mathematics and Computer Science alumnus from [Purdue University](https://purdue.edu/). My concentrations were in Software Engineering and Programming Languages for my Computer Science degree, while I focused on Analytical concepts in Mathematics. 
 
-Currently I am an Applied Mathematics PhD student in the Mathematics Graduate Department at Iowa State University after one year in their Post-Baccaulareate Program. Most of my current research interests are in applied mathematics, specifically in computer science and optimization problems. I have also entretained myself with 
+Currently I am an Applied Mathematics PhD student in the Mathematics Department at Iowa State University after one year in their Post-Baccaulareate Program. Most of my current research interests are in applied mathematics, specifically in computer science and optimization problems. I have also entertained myself with a few personal projects which you can check out on my [Github](https://github.com/mdsantia) or my projects tab.
 
 My biggest hobbies are all sorts of cue-sports (8-Ball and 9-ball mainly), video games (especially single player RPG franchises), recreational sports, coding, and casual philosophical discussions.
 
