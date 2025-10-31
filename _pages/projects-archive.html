@@ -1,0 +1,17 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+author_profile: true
+---
+
+These are some of the projects I have worked on over the years as a Software Engineer.
+<br></br>
+
+<div class="grid__wrapper">
+  {% assign sorted_projects = site.projects | sort: "quality_level" %}
+  {% for post in sorted_projects %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
+

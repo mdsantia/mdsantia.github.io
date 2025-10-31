@@ -1,0 +1,16 @@
+---
+layout: archive
+title: "Projects"
+permalink: /preprints/
+author_profile: true
+---
+
+These are the main documentation of the research I have done since undergrad.
+<br></br>
+
+<div class="grid__wrapper">
+  {% assign sorted_preprints = site.preprints | sort: "quality_level" %}
+  {% for post in sorted_preprints %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
