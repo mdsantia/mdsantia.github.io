@@ -87,7 +87,7 @@ analytics:
 author:
   name: "Micky Santiago-Zayas"
   avatar: /images/headshot.jpeg
-  bio: "Mathematics BS. Computer Science BS."
+  bio: "Mathematics BS. Computer Science BS. Applied Mathematics"
   location: "Ames, IA"
   email: "mdsantia@iastate.edu"
   uri:
@@ -260,7 +260,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _portfolio
+  # _projects
   - scope:
       path: ""
       type: portfolio
