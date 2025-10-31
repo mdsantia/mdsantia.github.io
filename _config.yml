@@ -235,7 +235,10 @@ compress_html:
 
 # Collections
 collections:
-  portfolio:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  preprints:
     output: true
     permalink: /:collection/:path/
 
@@ -263,7 +266,7 @@ defaults:
   # _projects
   - scope:
       path: ""
-      type: portfolio
+      type: projects
     values:
       layout: single
       author_profile: false
@@ -271,7 +274,7 @@ defaults:
   # _preprints
   - scope:
       path: ""
-      type: portfolio
+      type: preprints
     values:
       layout: single
       author_profile: false
