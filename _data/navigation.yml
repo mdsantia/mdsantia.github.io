@@ -1,18 +1,18 @@
 # main links
 main:
-  #  - title: "About"
-  #    url: /about/
-   - title: "Projects"
-     url: /projects/
-  #  - title: "Publications"
-    #  url: /publication/
-   - title: "CV"
-     url: /files/Resume.pdf
-   - title: "Posts"
-     url: /year-archive/
+  # - title: "About"
+  #   url: /about/
+  - title: "Projects"
+    url: /projects/
+  # - title: "Publications"
+  #   url: /publication/
+  - title: "CV"
+    url: /files/Resume.pdf
+  - title: "Posts"
+    url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
   - title: "Preprints"
-      url: /preprints/
+    url: /preprints/
