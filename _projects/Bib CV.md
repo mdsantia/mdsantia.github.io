@@ -6,7 +6,6 @@ header:
   teaser: "/images/BIB CV.png"
 quality_level: 1
 permalink: /bibcv/
-render_with_liquid: false
 ---
 <!-- OPEN IN OVERLEAF BUTTON -->
 [![Open in Overleaf][#overleaf-badge]][#github-repo-zip]
@@ -38,6 +37,7 @@ The first kind is what defines the structure for the bibtex to output as desired
 
 #### Declarations
 These are the responsible section when adding custom types and fields. 
+{% raw %}
 ```LaTex
 \DeclareDatamodelFields[type=field,datatype=date]{date,enddate}
 \DeclareDatamodelEntrytypes{job,award,talk}
@@ -45,9 +45,11 @@ These are the responsible section when adding custom types and fields.
 ...
 \DeclareBibliographyAlias{job}{misc}
 ```
+{% endraw %}
 
 #### Drivers
 This is responsible for the specific format the output is in. Do not be intimidated:
+{% raw %}
 ```LaTex
 % --- Job entries ---
 \DeclareBibliographyDriver{job}{%
@@ -61,10 +63,12 @@ This is responsible for the specific format the output is in. Do not be intimida
   \vspace{0.5em}%
 }
 ```
+{% endraw %}
 just use `\noindent` if no indentation, `\printfield{}` to print a value, `\addcomma\addperiod\vspace\hfill` etc. for formatting, other than that is just normal $\TeX{}$.
 
 #### MACROS
 Any additional help functions can be built through `macros`. As an example,
+{% raw %}
 ```LaTex
 % --- INITIALIZATION - Helper macro: print date range ---
 \newbibmacro*{printdaterange}{%
@@ -79,10 +83,12 @@ Any additional help functions can be built through `macros`. As an example,
 ...
 \usebibmacro{printdaterange} % TO CALL HELPER
 ```
+{% endraw %}
 
 ### BIB
 Hopefully, you are familiar with the main structure of a bib file and how to build entries. Nothing changes for this project other than, we have customized certain types, `@job` for example, and added new fields depending on the type, `endyear`. An example,
 
+{% raw %}
 ```bibtex
 @job{gta,
   priority     = {01},
@@ -102,6 +108,7 @@ Hopefully, you are familiar with the main structure of a bib file and how to bui
   keywords     = {job}
 }
 ```
+{% endraw %}
 
 Most importantly, I made it so that the `note` field serves as the main _Description Section_ of the `job` for example, and it is written as a list in $\TeX$, but this can be customized within the `.bbx` and `.sty` files.
 
@@ -130,6 +137,7 @@ Using the `\addtocategory{hidden}{[key]}` command hides the specific entry from 
 
 #### Customizations
 You can add other packages styles, section commands, etc. to make your CV stand out, for example 
+{% raw %}
 ```LaTex
 \resumeSubHeadingListStart
     \resumeSubheading
@@ -141,7 +149,9 @@ You can add other packages styles, section commands, etc. to make your CV stand 
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 ```
+{% endraw %}
 from 
+{% raw %}
 ```LaTex
 %-------------------------
 % Resume in Latex
@@ -150,4 +160,6 @@ from
 % License : MIT
 %------------------------
 ```
+{% endraw %}
+
 ***BESIDES THAT*** Go crazy in your `.tex`!
