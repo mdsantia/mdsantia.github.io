@@ -8,14 +8,12 @@ quality_level: 1
 permalink: /bibcv/
 ---
 <!-- OPEN IN OVERLEAF BUTTON -->
-![Overleaf Badge][https://tinyurl.com/overleaf-badge]
-![Open in Overleaf][https://www.overleaf.com/docs?snip_uri=https://www.overleaf.com/docs?snip_uri=https%3A%2F%2Fmdsantia.github.io%2Ffiles%2FBIB_CV.zip]
-<!-- SOURCE https://gist.github.com/sugatoray/5c9ec0d837bb0cc98bc7d98544a91c6f -->
-<!-- <a class="open-overleaf-btn"
+<!-- BADGE FORMAT SOURCE https://gist.github.com/sugatoray/5c9ec0d837bb0cc98bc7d98544a91c6f -->
+<a class="open-overleaf-btn"
    href="https://www.overleaf.com/docs?snip_uri=https%3A%2F%2Fmdsantia.github.io%2Ffiles%2FBIB_CV.zip"
    target="_blank">
    Open in Overleaf
-</a> -->
+</a>
 <!-- DOWNLOAD ZIP BUTTON -->
 <a class="download-zip-btn"
    href="../files/BIB_CV.zip"
@@ -32,7 +30,7 @@ Let us familiarize ourselves with the structure of the project. We have four typ
 4. .tex
 
 ### BBX
-The first kind is what defines the structure for the bibtex to output as desired. It may seem overwhelming but there is only two main things to focus on:
+The first kind is what defines the structure for the `biblatex` to output as desired. It may seem overwhelming but there is only two main things to focus on:
 
 #### Declarations
 These are the responsible section when adding custom types and fields. 
@@ -111,7 +109,7 @@ Hopefully, you are familiar with the main structure of a bib file and how to bui
 
 Most importantly, I made it so that the `note` field serves as the main _Description Section_ of the `job` for example, and it is written as a list in $\TeX$, but this can be customized within the `.bbx` and `.sty` files.
 
-***ENSURE*** that if there is no `endmonth` or `endyear` define it by the empty braces.
+***ENSURE*** that if there is no `endmonth` or `endyear` in the entry, then define it by the empty braces.
 
 ### STY
 The `.sty` file is a common type of file to set the preamble commands and constructions of a project. It is was allows in the `.tex` to use the `\usepackage{}` command. Most notably, the basic `cvstyle.sty` is made just to support multiple sorting algorithms so that entries output in a certain order.
