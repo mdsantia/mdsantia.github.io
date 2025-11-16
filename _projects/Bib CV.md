@@ -8,9 +8,8 @@ quality_level: 1
 permalink: /bibcv/
 ---
 <!-- OPEN IN OVERLEAF BUTTON -->
-[![Open in Overleaf][#overleaf-badge]][#github-repo-zip]
-[#overleaf-badge]: https://tinyurl.com/overleaf-badge
-[#github-repo-zip]: https://www.overleaf.com/docs?snip_uri=https://www.overleaf.com/docs?snip_uri=https%3A%2F%2Fmdsantia.github.io%2Ffiles%2FBIB_CV.zip
+![Overleaf Badge][https://tinyurl.com/overleaf-badge]
+![Open in Overleaf][https://www.overleaf.com/docs?snip_uri=https://www.overleaf.com/docs?snip_uri=https%3A%2F%2Fmdsantia.github.io%2Ffiles%2FBIB_CV.zip]
 <!-- SOURCE https://gist.github.com/sugatoray/5c9ec0d837bb0cc98bc7d98544a91c6f -->
 <!-- <a class="open-overleaf-btn"
    href="https://www.overleaf.com/docs?snip_uri=https%3A%2F%2Fmdsantia.github.io%2Ffiles%2FBIB_CV.zip"
