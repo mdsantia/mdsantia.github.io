@@ -5,7 +5,7 @@ excerpt: "Annoyed that all my personal data never changes when personalizing CV/
 header:
   teaser: "/images/BIB CV.png"
 quality_level: 1
-permalink: /bibcv/
+link: /bibcv/
 ---
 <!-- OPEN IN OVERLEAF BUTTON -->
 <!-- BADGE FORMAT SOURCE https://gist.github.com/sugatoray/5c9ec0d837bb0cc98bc7d98544a91c6f -->
@@ -102,7 +102,7 @@ Hopefully, you are familiar with the main structure of a bib file and how to bui
     \item Served as a Teaching Assistant for: Calculus I (60 students), Calculus II (90 students), Discrete Mathematics for Business and Social Sciences (138 students), and College Algebra (44 students)
     \end{itemize}
   },
-  keywords     = {job}
+  keywords     = {academia,job}
 }
 ```
 {% endraw %}
@@ -133,6 +133,32 @@ To automatically fill all the entries from all the bibliographies, you can use t
 Using the `\addtocategory{hidden}{[key]}` command hides the specific entry from the output.
 
 #### Customizations
+There is further customizations you can make per CV so that the data is tailored for a specific purpose. For example, the `\cvsetnote{[key]}{#2}` replaces the responsibilities in the database with the new things preferred for the new cv.
+{% raw %}
+```LaTex
+\cvsetnote{smith2024}{%
+  \begin{enumerate}
+    \item Led NLP research group
+    \item Published 3 papers
+  \end{enumerate}
+}
+```
+{% endraw %}
+
+Another crucial example is local sorting and types 
+{% raw %}
+```LaTex
+\newrefcontext[sorting=ynt] %new sorting
+\printbibliography[
+  type=article, % filter the types to print
+  heading=none, % Omit the References title
+  env=etaremuneenv, % writes the numbering for the 
+  notcategory=hidden, % hide the entries tagged `hidden`
+  keyword=academia % further filtering based on the keywords in the library 
+]
+```
+{% endraw %}
+
 You can add other packages styles, section commands, etc. to make your CV stand out, for example 
 {% raw %}
 ```LaTex
