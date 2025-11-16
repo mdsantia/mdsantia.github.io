@@ -6,6 +6,7 @@ header:
   teaser: "/images/BIB CV.png"
 quality_level: 1
 permalink: /bibcv/
+render_with_liquid: false
 ---
 <!-- OPEN IN OVERLEAF BUTTON -->
 [![Open in Overleaf][#overleaf-badge]][#github-repo-zip]
