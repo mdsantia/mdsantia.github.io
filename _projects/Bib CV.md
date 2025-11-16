@@ -31,14 +31,14 @@ permalink: /bibcv/
 
 <!-- OPEN IN OVERLEAF BUTTON -->
 <a class="open-overleaf-btn"
-   href="https://www.overleaf.com/docs?snip_uri=https://mdsantia.github.io/files/BIB%20CV.zip"
+   href="https://www.overleaf.com/docs?snip_uri=https%3A%2F%2Fmdsantia.github.io%2Ffiles%2FBIB_CV.zip"
    target="_blank">
    Open in Overleaf
 </a>
 
 <!-- DOWNLOAD ZIP BUTTON -->
 <a class="download-zip-btn"
-   href="../files/BIB CV.zip"
+   href="../files/BIB_CV.zip"
    download>
    Download ZIP
 </a>
